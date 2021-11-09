@@ -21,6 +21,11 @@
     padding: 39px 0 83px 46px;
 }
 
+.subtitle__logo{
+    color: #E4E4E4;
+    margin-top: 25px;
+}
+
 
 .center-nav{
     display: flex;
@@ -65,20 +70,29 @@
 }
 
 .section--right__search{
-    margin-left: 260px;
-    width: 300px;
+    margin-left: 240px;
+    width: 320px;
     height: 43px;
     padding: 10px;
+    box-shadow: 0px 3px 3px 0px #DDDDDD;
     border: 1px solid #DDDDDD;
     overflow: auto;
 
+}
+
+.right__search{
+    font-size: 15px;
+    color: #1A1A1A;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
 }
 
 .intro{
     width: 100%;
     height: 600px;
     background-image: url(../images/intro.png);
-    background: cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -188,7 +202,7 @@
     width: 100%;
     height: 600px;
     background-image: url(../images/about/about_1.png);
-    background: cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -319,7 +333,7 @@
     width: 100%;
     height: 600px;
     background-image: url(../images/ourstory/background.png);
-    background: cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -375,13 +389,25 @@
     line-height: 1.5;
 }
 
-.loop__search{
+.search{
     width: 410px;
     height: 48px;
+    font-size: 18px;
     background-color: #FFFFFF;
     padding: 10px;
     border: 1px solid #DDDDDD;
     overflow: auto;
+}
+
+
+.footer__items{
+    display: inline-flex;
+    margin: 85px 0 85px 0;
+}
+
+.footer__section--right{
+    max-width: 300px;
+    width: 100%;
 }
 
 .footer--right__nav{
@@ -391,11 +417,27 @@
 .footer--right__link a{
     font-size: 15px;
     color: #1A1A1A;
+    margin-bottom: 16px;
     text-decoration: none;
+}
+
+.footer--right__link{
+    margin-bottom: 16px;
+}
+
+.footer--right__link:last-child{
+    margin-bottom: 0;
+}
+
+.footer__section--center{
+    max-width: 300px;
+    width: 100%;
+    margin-right: 240px;
 }
 
 .footer--center__nav{
     list-style-type: none;
+    max-width: 300px;
 }
 
 .footer--center__link a{
@@ -404,6 +446,39 @@
     text-decoration: none;
 }
 
+.footer--center__link{
+    margin-bottom: 16px;
+}
+
+.footer--center__link:last-child{
+    margin-bottom: 0;
+}
+
+.section--left__info{
+    display: flex;
+}
+
+.section--left__info p{
+    display: block;
+    margin-right: 24px;
+    color: #1A1A1A;
+    text-align: right;
+    font-size: 15px;
+}
+
+.footer--left__links{
+    margin-top: 36px;
+    display: inline-flex;
+    float: right;
+}
+
+.footer--left__links a{
+    margin-right: 16px;
+}
+
+.footer--left__links a:last-child{
+    margin-right: 0;
+}
 
 
 
