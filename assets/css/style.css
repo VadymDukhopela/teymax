@@ -13,16 +13,12 @@ img{
 }
 
 .wrapper{
-    max-width: 1200px;
+    max-width: 1160px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 30px;
 }
 
 .header{
-    position: sticky;
-    top: 0;
-    left: 0;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 46px 122px 90px 46px;
 }
@@ -136,15 +132,22 @@ img{
 
 .products__nav{
     padding: 40px 220px 55px;
+    display: flex;
+    justify-content: center;
 }
 
 .products-menu{
     display: flex;
     list-style-type: none;
+    justify-content: space-between;
 }
 
 .products-menu__item{
     margin-left: 48px;
+}
+
+.products-menu__item:first-child{
+    margin-left: 0;
 }
 
 .products-menu__link{
@@ -162,6 +165,7 @@ img{
 
 .products-list{
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(4, 275px);
     grid-template-rows: repeat(5, 420px);
     grid-gap: 20px;
@@ -227,12 +231,15 @@ img{
 
 .first-banner__content{
     display: flex;
+    align-items: center;
 }
 
-
-.first-banner__circle{
+.first-banner__img{
     width: 100px;
     height: 100px;
+}
+
+.first-banner__circle{
 }
 
 .first-banner__info{
@@ -277,11 +284,13 @@ img{
 .second-banner__content{
     display: flex;
     background-color: #f7f7f7;
-
 }
 
 .second-banner__info{
-    padding: 90px 130px 93px 93px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 90px 130px 90px 90px;
 }
 
 .second-banner__title{
@@ -292,13 +301,12 @@ img{
 
 
 .second-banner__subtitle{
-    padding: 20px 0 32px;
+    margin: 20px 0 32px;
     font-size: 15px;
     max-width: 162px;
 }
 
 .second-banner__btn{
-    display: block;
     text-decoration: none;
     color: #1a1a1a;
     padding-bottom: 3px;
@@ -310,39 +318,47 @@ img{
 .second-banner__img{
     width: 65%;
     height: auto;
-
 }
 
 .our-mission{
     padding: 115px 0;
 }
 
+.our-mission__info{
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 550px;
+}
+
 .our-mission__title{
     font-size: 30px;
     color: #1a1a1a;
-    max-width: 630px;
     margin: 0 auto 91px;
 }
 
 .our-mission__items{
-    display: grid;
-    grid-template-columns: repeat(2, 522px);
-    grid-gap: 116px;
+   display: flex;
 }
 
+.our-mission__item{
+    margin-left: 15px;
+}
 .mission__img--man{
-    width: 522px;
-    height: 647px;
+    width: 100%;
+    height: 100%;
 }
 
 .mission__img--woman{
-    width: 522px;
-    height: 647px;
+    width: 100%;
+    height: 100%;
 }
 
 .mission__img--objects{
-    width: 1160px;
-    height: 657px;
+    width: 100%;
+    height: 100%;
 }
 
 .mission__btn{
@@ -365,6 +381,9 @@ img{
 .about__info{   
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .about__title{
@@ -451,7 +470,7 @@ img{
 .footer-menu--center{
     list-style: none;
     padding-right: 161px;
-    margin-right: 236px;
+    margin-right: 100px;
     width: 100%;
 }
 
@@ -511,11 +530,72 @@ img{
     height: 30px;
 }
 
+@media (min-width: 960px) and (max-width: 1264px) {
+    .products-list{
+        grid-template-columns: repeat(3, 275px);
 
-@media screen and (max-width: 480px) {
+    }
 
-    .header{
-        background-color: #1a1a1a;
+    .prodcuts-list__item:nth-child(odd){
+        display: none;
+    }
+
+}
+
+@media (max-width:960px) {
+    .header--right{
+        display: none;
+    }
+
+    .second-banner__img{
+        display: none;
+    }
+
+    .second-banner__info{
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .second-banner__title{
+        color: #f7f7f7;
+    }
+
+    .second-banner__subtitle{
+        color: #f7f7f7;
+    }
+
+    .second-banner__btn{
+        color: #f7f7f7;
+    }
+
+    .second-banner__content{
+        background-color: unset;
+    }
+
+    .second-banner{
+        background-image: url(../images/about/section--second__img.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 960px) {
+    .products-list{
+        grid-template-columns: repeat(2, 275px);
+    }
+
+    .prodcuts-list__item:nth-child(odd){
+        display: none;
+    }
+}
+
+@media (max-width: 600px){
+    .products-list{
+        grid-template-columns: repeat(1, 275px);
+    }
+
+    .prodcuts-list__item:nth-child(odd){
+        display: none;
     }
     
 }
