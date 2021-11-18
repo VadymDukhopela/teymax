@@ -1,4 +1,4 @@
-let namalna = 1;
+/* let namalna = 1;
 
 do{
 
@@ -14,4 +14,21 @@ do{
                          );
 
     result == true? namalna = 0: namalna = 1;
-}while(namalna);
+}while(namalna); */
+
+
+let namalna = true;
+
+while(namalna){
+
+    const fname = prompt("Имя: ", "");
+    const yearsOld = prompt("Возраст: ", "");
+    const occupation = prompt("Професия: ", "");
+    const food = prompt("Любимое блюдо: ", "");
+
+    namalna = !confirm("Имя: " + fname + "    " +  
+                         "Возраст: " + yearsOld + "    " +
+                         "Професия: " + occupation + "    " +
+                         "Любимое блюдо: " + food + "    "
+                         );
+}
