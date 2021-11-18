@@ -33,10 +33,6 @@ img{
     height: 38px;
 }
 
-.header--center{
-    padding: 0 320px 0 154px;
-}
-
 .header-menu--center{
     display: flex;
     list-style-type: none;
@@ -469,7 +465,6 @@ img{
 
 .footer-menu--center{
     list-style: none;
-    padding-right: 161px;
     margin-right: 100px;
     width: 100%;
 }
@@ -576,6 +571,26 @@ img{
         background-image: url(../images/about/section--second__img.png);
         background-size: cover;
         background-repeat: no-repeat;
+    }
+    
+    .footer-menu{
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    .footer-menu--left{
+        margin-bottom: 20px;
+    }
+    .footer-menu--center{
+        margin-bottom: 20px;
+    }
+
+    .footer-menu--right{
+        align-items: center;
+    }
+    
+    .footer-menu--right__social{
+        justify-content: center;
     }
 }
 
