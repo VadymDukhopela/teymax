@@ -1,0 +1,23 @@
+.circle {
+    display: block;
+    background-color: purple;
+    border-radius: 128px;
+    cursor: grab;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 139px;
+    left: 200px;
+    transition: box-shadow 0.1 linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    user-select: none;
+}
+  
+.active {
+    box-shadow: 0px 0px 8px 3px rgba(0 0 0 / 0.2);
+    cursor: grabbing;
+}
+  
