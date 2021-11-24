@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    margin-top: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 25px;
+    border: 1px solid black;
+    border-radius: 32px;
+}
+
+.content__item{
+    position: relative;
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 15px 0 15px 10px;
+    border: 1px solid black;
+    border-radius: 64px;
+    cursor: pointer;
+    transition: .3s color, background linear;
+}
+
+.content__item:last-child{
+    margin-bottom: 0;
+}
+
+.content__item:hover{
+    background-color: cadetblue;
+    color: #f7f7f7;
+}
+
