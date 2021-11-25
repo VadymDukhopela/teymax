@@ -37,14 +37,16 @@ for (let i = 0; i < arr.length; i++){
   contentItem.className = 'content__item';
   contentItem.id = `${arr[i].id}`
   contentItem.innerText = `${arr[i].content}`;
-  document.getElementById('content').appendChild(contentItem);
+  document.querySelector('#content').appendChild(contentItem);
 }
 
 
-document.querySelector('.content__item').addEventListener('click', () => {
-    console.log('сlick');
-  }
-);
+
+document.querySelectorAll('.content__item').ForEach((item) => {
+  item.addEventListener('click', () => {
+    console.log('Даже кликает');
+  })
+})
 
 
 
